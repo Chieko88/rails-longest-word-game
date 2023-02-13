@@ -1,0 +1,15 @@
+<h1>Result</h1>
+
+<p>
+  <% if @included === false%>
+    Sorry but <%= @word %> can't be built out of <%= @letters %>
+  <% elsif @english === false %>
+    Sorry but <%= @word %> dose not seem to be a valid English word...
+  <% else %>
+    Congratulations! <%= @word %> is a valid English word!
+  <% end %>
+</p>
+
+<p>
+  <%= link_to 'Play again', new_path %>
+</p>
